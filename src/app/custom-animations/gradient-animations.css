@@ -1,0 +1,66 @@
+/* Background Gradient Animations */
+
+@keyframes gradient-bg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.gradient-bg {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+    background-size: 300% 300%;
+    animation: gradient-bg 6s ease infinite;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Text Gradient Animations */
+
+@keyframes gradient-text {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+    background-size: 300% 300%;
+    animation: gradient-text 6s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+
+/* Button Dropdown Gradient */
+
+@keyframes gradient-dropdown {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.gradient-dropdown {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+    background-size: 300% 300%;
+    animation: gradient-dropdown 6s ease infinite;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gradient-dropdown:hover {
+    filter: brightness(1.2);
+}
+
+.dropdown-menu {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+    background-size: 300% 300%;
+    animation: gradient-dropdown 6s ease infinite;
+    border-radius: 5px;
+    padding: 10px;
+}

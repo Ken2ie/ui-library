@@ -1,0 +1,22 @@
+.layout{
+    width: 100%;
+    height: 93vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.side-nav-container{
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    /* border-right: 2px solid #eee; */
+}
+
+.activity{
+    display: flex;
+    flex: 1;
+}

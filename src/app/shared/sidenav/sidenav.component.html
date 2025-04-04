@@ -1,0 +1,25 @@
+<div class="category">
+  @for (nav of navList; track $index) {
+  <a [routerLink]="nav.link" class="nav-item">
+    <div class="name">
+      <i class="material-symbols-outlined">{{ nav.icon }}</i>
+      <span class="nav-title">{{ nav.title }}</span>
+    </div>
+    @if(nav.submenu.length > 0) {
+    <button (click)="toggleSubMenu($index)" class="submenu-toggle">
+      <i class="material-symbols-outlined">chevron_right</i>
+    </button>
+    }
+  </a>
+    <div class="sub-menu" *ngIf="$index === selectedSubMenu">
+        @for (subnav of nav.submenu; track $index) {
+        <a [routerLink]="subnav.link" class="nav-item">
+        <div class="name sub-menu-item">
+            <i class="material-symbols-outlined">{{ subnav.icon }}</i>
+            <span class="nav-title sub-title">{{ subnav.title }}</span>
+        </div>
+        </a>
+        }
+    </div>
+  }
+</div>
