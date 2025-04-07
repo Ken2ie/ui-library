@@ -1,0 +1,46 @@
+<div class="team-software">
+  <div class="container">
+    <h2>Team Software</h2>
+    <div class="categories">
+      @for (category of teamSoftwareCategories; track $index) {
+      <div class="category">
+        <div class="category-details">
+          <h5>{{ category.title }}</h5>
+          <p>{{ category.description }}</p>
+        </div>
+        <div class="grid">
+            @for (software of category.softwares; track $index) {
+                <div class="software">
+          <img src="{{ software.appImage }}" alt="" />
+          <div class="app-details">
+              <div class="app-d-info">
+                <h4>{{ software.name }}</h4>
+              <p>{{ software.appDescription }}</p>
+              </div>
+              <ul>
+                  <li>
+                      <a
+                      href="{{ software.link }}"
+                      target="_blank"
+                  class="material-symbols-outlined"
+                  >link</a
+                >
+              </li>
+              <li>
+                  <a
+                  href="{{ software.download }}"
+                  target="_blank"
+                  class="material-symbols-outlined"
+                  >download</a
+                  >
+                </li>
+            </ul>
+        </div>
+    </div>
+}
+</div>
+      </div>
+      }
+    </div>
+  </div>
+</div>

@@ -499,7 +499,7 @@ export class NotionEditorComponent implements OnInit, OnDestroy {
     { label: 'Columns', command: 'columns', icon: '📏' }
   ];
 
-  modules = {
+  modules : any = {
     toolbar: [
       ['bold', 'italic', 'underline', 'strike'],
       ['blockquote', 'code-block'],

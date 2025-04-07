@@ -1,0 +1,99 @@
+.team-software {
+  width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.category{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.category-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.software{
+    display: flex;
+    gap: 20px;
+}
+
+.software img{
+    width: 200px;
+    height: 160px;
+    border-radius: 15px;
+    object-fit: cover;
+    display: flex;
+    background-color: #ddd;
+}
+
+.container h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.category-details h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.app-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app-d-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.app-details .app-d-info p{
+    font-size: 12px;
+}
+
+.app-details ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.app-details ul li a{
+    text-decoration: none;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    background-color: #333;
+    color: #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

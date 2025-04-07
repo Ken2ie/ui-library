@@ -17,6 +17,7 @@
 }
 
 .activity{
+    width: 85vw;
     display: flex;
     flex: 1;
 }
